@@ -82,4 +82,8 @@ public class BookController {
         return new ResponseEntity<>(bookService.getAllOrderDetails(), HttpStatus.OK);
     }
 
+    @GetMapping("/check")
+    public String checkLog(){
+        return "API Checking..";
+    }
 }
